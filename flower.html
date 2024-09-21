@@ -330,3 +330,29 @@
     <script src="main.js"></script>
   </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    
+
+    <!-- Reproductor de audio sin controles y reproducción automática -->
+    <audio id="audio2" autoplay loop>
+        <source src="sound/Y2meta.app - Jungkook - Yes or No (Traducida al Español) (128 kbps).mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    
+
+    <script>
+        function goToPage1() {
+            var audio = document.getElementById('audio2');
+            audio.pause(); // Pausa el audio de la segunda página
+            window.location.href = 'index.html'; // Redirige a la primera página
+        }
+    </script>
+</body>
+</html>
