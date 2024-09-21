@@ -334,14 +334,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi Princesa</title>
+    
 </head>
 <body>
-    <h1>Bienvenidos a Mi Princesa</h1>
-    <p>Esta es mi página web en GitHub Pages.</p>
+    
 
-    <!-- Video incrustado de YouTube -->
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=N4EC7QzEuDs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <!-- Reproductor de audio sin controles y reproducción automática -->
+    <audio id="audio2" autoplay loop>
+        <source src="sound/Y2meta.app - Jungkook - Yes or No (Traducida al Español) (128 kbps).mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
 
+    
+
+    <script>
+        function goToPage1() {
+            var audio = document.getElementById('audio2');
+            audio.pause(); // Pausa el audio de la segunda página
+            window.location.href = 'index.html'; // Redirige a la primera página
+        }
+    </script>
 </body>
 </html>
