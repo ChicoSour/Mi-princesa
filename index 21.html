@@ -34,3 +34,29 @@
 </body>
 
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Princesa</title>
+</head>
+<body>
+ 
+
+    <!-- Reproductor de audio sin controles y reproducción automática -->
+    <audio id="audio1" autoplay loop>
+        <source src="sound/Y2meta.app - Jungkook - Yes or No (Traducida al Español) (128 kbps).mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+   
+
+    <script>
+        function goToPage2() {
+            var audio = document.getElementById('audio1');
+            audio.pause(); // Pausa el audio de la primera página
+            window.location.href = 'page2.html'; // Redirige a la segunda página
+        }
+    </script>
+</body>
+</html>
